@@ -31,7 +31,16 @@
 ```bash
 $ npm install
 ```
+## Building the app
+npm run build
 
+## DB setup
+Create a Postgres DB amorphic_notes with role nodejs and password nodejs <br/>
+```
+CREATE ROLE nodejs WITH LOGIN PASSWORD 'nodejs'
+ALTER USER nodejs
+CREATEDB create database amorphic_notes owner nodejs
+```
 ## Running the app
 
 ```bash
